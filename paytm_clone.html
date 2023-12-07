@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>paytm colone</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Inter,sans-serif;
+            box-sizing: border-box;  
+        }
+        header{
+            height: 90px;    
+        }
+        .nav{
+            justify-content: center;
+            margin-left: 14%;
+        }
+        .nav-item a{
+            margin-top: -30px;
+            padding-left: 41px;
+            font-size: 19px;  
+            opacity: 0.8;
+            color: black; 
+            font-weight: 600;
+        } 
+        .logo{
+            position: relative;
+            left: 100px;
+            top: 19px;
+        }
+        .demobtn{
+            margin-left: 60px;
+            margin-top: -33px;
+            background-color: #00baf2;
+            padding: 4px 13px;
+            border: none;
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+            border-radius: 25px;
+        }
+        .demobtn:hover{
+            background-color: #002970;
+        }
+        .pera1{
+            color: #000;
+            opacity: 0.8;
+            font-size: 17px;
+            font-weight: 600;
+            margin-left: 30%;
+            margin-top: 4%;    
+        }
+        .span{
+            font-size: 25px;
+        }
+        .h1{
+            font-size: 61px;
+            font-weight: 700;
+            color: black;
+            margin-left: 60px;
+            margin-top: 70px; 
+        }
+        .pera2{
+            width: 66%;
+            font-size: 22px;
+            color: #000000;
+            margin-left: -94%;
+            margin-top: 460px;
+            line-height: 30px;
+        }
+        .btn1{
+            border-radius: 25px;
+            border: none;
+            padding: 10px 24px;
+            background-color: #000000;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            margin-left: -700px;
+            margin-top: 30px;
+        }
+        .btn1:hover{
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            border: 2px solid black;
+        }
+        .main-box{
+            background-color:#00baf2;;
+            width: 100%;
+            height: 420px;  
+        }
+        .text{
+            font-size: 39px;
+            font-weight: 700;
+            color: white;
+            padding-top: 80px;
+            padding-left: 70px;
+        }
+        .text1{
+            font-size: 20px;
+            font-weight: 500;
+            color: white;   
+        }
+        figure{
+            float: left;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+        figcaption{
+            margin-top: 30px;
+            margin-left: 70px;
+        }
+        .main-box-1{
+            background-color:#154383;
+            width: 100%;
+            height: 400px;    
+        }
+        .text2{
+            font-size: 49px;
+            font-weight: 700;
+            color: black;
+            padding-top: 110px;   
+        }
+        .box-sec{
+            width: 100%;
+            background-color: #f5f7fa;
+        }
+        .box{  
+            background-color: white ;
+            border-radius: 8px;
+            margin-top: 35px;
+            margin-bottom: 50px;
+            padding-bottom: 80px;
+        }
+        .text3{
+            color: #000000;
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 60px;
+            margin-left: 75px;
+        }
+        .pera3{
+            font-size: 19px;
+            color:#000000;
+            font-family: sans-serif;
+            margin-left: 80px;
+            margin-top: 30px;   
+        }
+        .btn2{
+            border-radius: 50px;
+            border: none;
+            padding: 15px 30px;
+            background-color: #002970;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            margin-left: -700px;
+            margin-top: 30px;
+        }
+        .btn2:hover{
+            background-color: #00baf2;
+            color: white;
+            border-radius: 25px;        
+        }
+        .box1{  
+            background-color: white ;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .box2{
+            background-color: white;
+            width: 100%;
+            padding-top: 60px;
+            padding-bottom: 120px;   
+        }
+        .h1{
+            font-size: 48px;
+            color: #000000;
+            font-family: sans-serif;
+            line-height: 50px;
+            font-weight: 700;
+        }
+        .box3{
+            margin-top: 90px;
+        }
+        .box4{
+            background-color: white;
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 120px;
+        }
+        .box5{
+            width: 100%;
+            padding-bottom: 120px;
+        }
+        .box-conten{
+            width: 100%;
+            background-color:  #f5f7fa;     
+            padding-top: 60px;
+            padding-bottom: 100px;
+            border-radius: 12px;
+        }
+        .text4{
+            font-weight: 700;
+            color:#000000;
+            font-size: 29px;
+            line-height: 32px;
+        }
+        .pera4{
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #000000;
+            letter-spacing: 1px;
+            margin-top: 40px;
+        }
+        .fig{
+            margin-left: -40px;
+        }
+        .ac{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            color: #00baf2;   
+        }
+        .ac:hover{
+            color: #002970;
+        }
+        .cll{
+            float: left;  
+        }
+        .bgc{
+            background-color: #00baf2;
+            border-radius: 8px;
+            white-space: normal;
+            cursor: pointer;
+            width: 180px;
+            height: 260px;
+            text-align: center;
+            opacity: 0.8;
+        }
+        .bgc:hover{
+            opacity: 8;       
+        }
+        .bgc1{
+            background-color: #00baf2;
+            border-radius: 8px;
+            white-space: normal;
+            cursor: pointer;
+            width: 180px;
+            height: 250px;
+            opacity: 0.8;
+        }
+        .bgc1:hover{
+            opacity: 8;
+        }
+        .mt{
+            font-size: 13px;
+            font-weight: 900;
+            color: white;
+            padding-top: 25px;
+            line-height: 24px;
+        }
+        .fot{
+            width: 100%;
+            background-color:  #f5f7fa;
+            margin-top: 240px;
+        }
+        .card-body a{
+            text-decoration:none;
+            color: #707070;
+            font-size: 13px;
+            margin-left: 5%;
+        }   
+    </style>
+   
+</head>
+<body>
+    <!---------header---------->
+    <header class="shadow-lg fixed-top" style=" width: 100%; margin-top: 0px; background-color: white;">
+        <a href="#"><img class="logo" src="paytm-imgages/paytm_logo.png"width="200px"></a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" >Paytm for Consumer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" >Paytm for Business</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="#" >Investor Relations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" >Company</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" >Career</a>
+            </li>
+            <button class="demobtn ps-2">Sign in<img class="ms-3" src="paytm-imgages/loginImg.svg"width="38px"></button>    
+        </ul>
+    </header>
+    <!------------header close-->
+    <h1>burhanpur</h1>
+    <!------------2part--------->
+            <div style="margin-top: 40px;">
+                <p class="pera1">No Wallet KYC Required<span class="span ps-2 pe-2">😊</span>to pay using UPI on Paytm.<a href="#" style="text-decoration: none; color: black; padding-left: 4px;">Learn more.</a></p>
+            </div>
+        <div class="row shadow-lg" style="margin-top:-15px; padding-bottom: 130px;">
+            <div class="col">
+                <img src="paytm-imgages/paytm-lipi.png"width="12%" style="margin-left: 60px; margin-top: 130px;">
+                <h1 class="h1">India's Most-loved<br>Payments App</h1>
+            </div>
+            <div class="col">
+                <img class="" src="paytm-imgages/paytm-mobail.webp"width="545px"style="position:absolute;right: 30px;top:250px;">
+                <p class="pera2">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+                <button class="btn1">Download Paytm App<img src=""></button>
+            </div>
+        </div>
+        <div class="main-box" >
+            <h2 class="text">Recharge & Pay Bills on Paytm.</h2>
+            <figure>
+                <img src="paytm-imgages/recharj.png"width="70px" style="margin-left: 70px;" >
+                <figcaption>
+                    <h3 class="text1">Recharge<br>Prepaid<br>Mobile ></h3>
+                    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/electricty.png"width="70px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Pay<br>Electricity<br>Bill ></h3>    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/dth.png"width="70px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Recharge<br>DTH<br>Connection ></h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/gas.png"width="70px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Book<br>Gas<br>Cylinder ></h3>
+                    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/pay.png"width="70px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Pay<br>Broadband &<br>Landline Bill ></h3>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/education.png"width="70px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Pay<br>Education<br>Fee ></h3>             
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/services.png"width="70px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">All<br>Payment<br>Services ></h3>
+                    
+                </figcaption>
+            </figure>       
+        </div>
+
+            <!---------------mainbox1----------------->
+        <div class="main-box-1">
+            <h2 class="text">Book & Buy on Paytm.</h2>
+            <figure>
+                <img src="paytm-imgages/movie.png"width="75px" style="margin-left: 70px;" >
+                <figcaption>
+                    <h3 class="text1">Movie<br>Tickets ></h3>
+                    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/fight.png"width="75px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Flight<br>Tickets ></h3>    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/bus.png"width="75px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Bus<br>Tickets ></h3>
+                    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/trian.png"width="75px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Train<br>Tickets ></h3>
+                    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/buy.png"width="75px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Buy<br>Insurance ></h3>
+                    
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/internation.png"width="75px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">International<br>Flights ></h3>             
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="paytm-imgages/invest.png"width="75px" style="margin-left: 70px;">
+                <figcaption>
+                    <h3 class="text1">Invest<br>in Stocks ></h3>
+                    
+                </figcaption>
+            </figure>       
+        </div>
+        <div class="box-sec">
+            <div class="container">
+                <h1 class="text2">Paytm Payment Instruments</h1>
+                <div class="box row">
+                    <div class="col">
+                        <img src="paytm-imgages/paytm-wallet.png"width="14%" style="margin-top: 130px; margin-left: 80px;"><h5 style="margin-left: 176px; margin-top: -59px; font-size: 18px;color: #000000; font-weight: 700;">Paytm<br>Wallet</h5>
+                        <h3 class="text3">The Fastest Way to<br>Pay In-store & Online.</h3>
+                        <p class="pera3">Load up your Paytm Wallet for free and make payments<br>in a jiffy at over 21 million stores, websites and apps.</p>
+                        <button class="btn1" style="margin-left: 70px; margin-top: 30px;">Download Paytm App<img src=""></button>
+                    </div>
+                    <div class="col">
+                        <img src="paytm-imgages/mobaile-2.png"width="539px" style="margin-top: 85px;">
+                    </div>
+                </div>
+
+                <div class="box row">
+                    <div class="col">
+                        <img src="paytm-imgages/paytm-money.png"width="14%" style="margin-top: 130px; margin-left: 80px;"><h5 style="margin-left: 176px; margin-top: -59px; font-size: 18px;color: #000000; font-weight: 700;">UPI Money<br>Transfer</h5>
+                        <h3 class="text3">Pay anyone directly<br> from your bank<br> account.</h3>
+                        <p class="pera3">Pay anyone, everywhere. Make contactless & secure<br> payments in-stores or online using Paytm Wallet or<br>Directly from your Bank Account. Plus, send & receive<br> money from anyone.</p>
+                        <button class="btn1" style="margin-left: 70px; margin-top: 30px;">Download Paytm App<img src=""></button>
+                    </div>
+                    <div class="col">
+                        <img src="paytm-imgages/paied-susfully.png"width="559px"height="550px" style="margin-top: 150px;">
+                    </div>
+                </div>
+
+                <div class="box row">
+                    <div class="col">
+                        <img src="paytm-imgages/postpay.png"width="31%" style="margin-top: 160px; margin-left: 80px;">
+                        <h3 class="text3">Want it?<br>No more waiting for it.</h3>
+                        <p class="pera3">With Paytm Postpaid, your wishlist doesn't have to be<br> on the waitlist. Shop for the things you want today and<br> pay for them next month.</p>
+                        <button class="btn2" style="margin-left: 70px; margin-top: 50px;">Learn More ></button>
+                    </div>
+                    <div class="col">
+                        <img src="paytm-imgages/shopingbag (1).png"width="539px" style="margin-top: 85px;">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col box1">
+                        <img src="paytm-imgages/hdfc-logo.png"width="34%" style="margin-top: 70px; margin-left: 80px;">
+                        <h1 class="text3" style="font-size:45px; margin-top: 35px;">Unlimited Cashback<br>Every time</h1>
+                        <p class="pera3" style="font-size: 20px; font-weight: 500; line-height: 30px;">Paytm HDFC Bank Select Credit Card. A card<br> with assured Cashback and incredible offers.</p>
+                        <img src="paytm-imgages/sumilt-card.png"height="370px" style="margin-left: 60px; padding-top: 40px; transform: translate(-50%),-2%;">
+                    </div>
+                    <div class="col box1 ms-5">
+                        <img src="paytm-imgages/sbi-logo.png"width="34%" style="margin-top: 128px; margin-left: 80px;">
+                        <h1 class="text3" style="font-size:45px; margin-top: 35px;">India’s Most<br>Sincere Credit Card</h1>
+                        <p class="pera3" style="font-size: 20px; font-weight: 500; line-height: 30px;">Paytm SBI Card SELECT - With Intelligent<br> Features & Great Rewards that Never Expire</p>
+                        <img src="paytm-imgages/sbi-card.png"height="370px" style="margin-left: 60px; padding-top: 45px; transform: translate(-50%),-2%;">
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="h1">Financial Services by Paytm</h1>
+                        <div class="col">     
+                            <img src="paytm-imgages/payment-bank-logo.png"width="38%" style="margin-top: 70px; margin-left: 65px;">
+                            <h3 class="text3" style="font-size: 45px; margin-left:65px;">India's most sincere<br>bank.</h3>
+                            <p class="pera3" style="margin-left: 65px;">With Paytm Postpaid, your wishlist doesn't have to be<br> on the waitlist. Shop for the things you want today and<br> pay for them next month.</p>
+                            <button class="btn2" style="margin-left: 65px; margin-top: 40px;">Learn More ></button>
+                        </div>
+                        <div class="col">
+                            <img src="paytm-imgages/auto-creat.png"width="452px" style="margin-left: 27%; margin-top: 43px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <img src="paytm-imgages/gray-spike.png"width="100%">
+                <div class="col">
+                    <img src="paytm-imgages/paytm-mobaile-money.png"width="550px" style="margin-top: -780px; margin-left: 84px;">
+                </div>
+                <div class="col" style="margin-top: -640px; margin-left: 780px;">     
+                    <img src="paytm-imgages/paytm-money.png"width="23%" style="margin-left: 80px;">
+                    <h3 class="text3" style="font-size: 48px; ">Build Long-term<br>Wealth & Achieve<br> your Goals.</h3>
+                    <p class="pera3">Investing on Paytm Money is transparent, low-cost and<br> commission-free. Buy stocks & mutual funds that can<br> help you create wealth & realise your dreams.</p>
+                    <button class="btn2" style="margin-left: 65px; margin-top: 40px;">Learn More ></button>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="row">
+                    <div class="col" style="margin-left: 40px;">     
+                        <img src="paytm-imgages/insurence-logo.jpeg"width="26%" style="margin-top: 170px; margin-left: 70px;">
+                        <h3 class="text3" style="font-size: 45px; margin-left:65px;">Insurance made easy.</h3>
+                        <p class="pera3" style="margin-left: 65px;">Buying insurance does not have to be tedious, time-<br>consuming & confusing. Paytm Insurance removes the<br> worry of getting insured by making it simple,<br> convenient & easy-to-understand.</p>
+                        <button class="btn2" style="margin-left: 65px; margin-top: 40px;">Learn More ></button>
+                    </div>
+                    <div class="col">
+                        <img src="paytm-imgages/pay-car.png"width="489px" style="margin-left: 17%; margin-top: 190px;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box5">
+                <div class="row">
+                    <div class="col">
+                        <img src="paytm-imgages/pay-home.png"width="489px" style="margin-left: 15%; margin-top: 190px;">
+                    </div>
+                    <div class="col" style="margin-left: 40px;">     
+                        <img src="paytm-imgages/persnal-lon.png"width="26%" style="margin-top: 170px; margin-left: 63px;">
+                        <h3 class="text3" style="font-size: 45px; margin-left:65px;">Get a Personal Loan in<br> 2 Minutes.</h3>
+                        <p class="pera3" style="margin-left: 65px;">Paytm offers India's quickest multi-purpose, hassle-free loan. It<br> is 100% digital, transparent and paperless.</p>
+                        <button class="btn2" style="margin-left: 65px; margin-top: 40px;">Learn More ></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+            <div class="container-fluid pt-5">
+                <div class="container">
+                    <h1 class="h1 ms-3" >Business Services by Paytm</h1>
+                    <div class="box-conten mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="text3" style="font-size: 45px; margin-left:73px; margin-top: 160px;">Get a Personal Loan in<br> 2 Minutes.</h3>
+                                <p class="pera3" style="margin-left: 73px;">Paytm offers India's quickest multi-purpose, hassle-free loan. It<br> is 100% digital, transparent and paperless.</p>
+                                <button class="btn2" style="margin-left: 73px; margin-top: 40px;">Learn More ></button>
+                            </div>
+                            <div col>
+                                <img src="paytm-imgages/2-items.png"width="443px" style="margin-left: 66%; margin-top: -410px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-conten mt-4">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="text3" style="font-size: 45px; margin-left:73px; margin-top: 160px;">In-shop payments<br> powered by Paytm.</h3>
+                                <p class="pera3" style="margin-left: 73px;">Millions of small & big businesses use Paytm to accept<br> payments anywhere any time with a wide range of<br> solutions for all kind of merchants</p>
+                                <button class="btn2" style="margin-left: 73px; margin-top: 40px;">Learn More ></button>
+                            </div>
+                            <div col>
+                                <img src="paytm-imgages/paytm-businees.png"width="473px" style="margin-left: 63%; margin-top: -410px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="h1 ms-0" style="padding-top: 80px;">Business Tools to help<br> your business grow</h1>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <figure class="fig">
+                                <img  src="paytm-imgages/deshbord.png"width="60%" style="margin-left: 67px;">
+                                <figcaption>
+                                    <h3 class="text4">POS Billing<br>Software</h3>
+                                    <p class="pera4">Say Hello to Smart Retail<br> Business Management</p>
+                                    <a class="ac" href="#">Learn More</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-3">
+                            <figure class="fig">
+                                <img src="paytm-imgages/payatm-free.png"width="60%" style="margin-left: 67px;">
+                                <figcaption>
+                                    <h3 class="text4">Paytm for<br>Business App</h3>
+                                    <p class="pera4">Everything you need to<br> manage your business<br> on your phone</p>
+                                    <a class="ac" href="#">Learn More</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-3">
+                            <figure class="fig">
+                                <img src="paytm-imgages/singlclick.png"width="60%"style="margin-left: 67px;">
+                                <figcaption>
+                                    <h3 class="text4">Advertise on<br>Paytm</h3>
+                                    <p class="pera4">Grow your business by<br> advertising on India’s<br> largest mobile business</p>
+                                    <a class="ac" href="#">Learn More</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-3">
+                            <figure class="fig">
+                                <img src="paytm-imgages/bussines-khate.png"width="60%"style="margin-left: 67px;">
+                                <figcaption>
+                                    <h3 class="text4">Business<br>Khata</h3>
+                                    <p class="pera4">Managing Khata made<br> easy</p>
+                                    <a class="ac" href="#">Learn More</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+            </div>
+            <div class="row" style="padding-top: 270px;">
+                <div class="col-sm-2 cll" style="margin-left: 149px;">
+                    <img src="paytm-imgages/pay-money.png"width="150px">
+                    <p style="font-size: 17px; font-weight:500; color: #000; padding-top: 60px;">Get started on wealth<br> creation journey with Zero<br> brokerage fee & no hidden<br> charges.</p>
+                    <a class="ac" href="#">Learn More</a>
+                </div>
+                <div class="col-sm-2 cll bgc">
+                    <img class="mt-2" src="paytm-imgages/invest.png"width="100%">
+                    <h5 class="mt-3 text-light" style="font-weight: 700;" >Invest in<br> Stocks</h5>
+                </div>
+                <div class="col-sm-2 cll bgc ms-4">
+                    <img class="mt-2" src="paytm-imgages/ipo.png"width="100%">
+                    <h5 class="mt-3 text-light" style="font-weight: 700;">Apply for IPO</h5>
+                </div>
+                <div class="col-sm-2 cll bgc ms-4">
+                    <img class="mt-2" src="paytm-imgages/etfs.png"width="100%">
+                    <h5 class="mt-3 text-light" style="font-weight: 700;">Invest in<br> ETFs</h5>
+                </div>
+                <div class="col-sm-2 cll bgc ms-4 clb">
+                    <img class="mt-2" src="paytm-imgages/buygold.png"width="100%">
+                    <h5 class="mt-3 text-light" style="font-weight: 700;">Buy Gold</h5>
+                </div>
+                <div class="col-sm-2 cll bgc ms-4 clb">
+                    <img class="mt-2" src="paytm-imgages/mutualfods.png"width="100%">
+                    <h5 class="mt-3 text-light" style="font-weight: 700;">Invest in<br> Mutual Funds</h5>
+                </div>
+                
+            </div>
+
+            <div class="row" style="padding-top: 170px;">
+                <div class="col-sm-2 cll" style="margin-left: 149px;">
+                    <img src="paytm-imgages/paytmtrevallogo.png"width="165px">
+                    <p style="font-size: 17px; font-weight:500; color: #000; padding-top: 60px;">Best travel solutions with<br> quick ticket bookings, great<br> offers and easy refunds</p>
+                    <a class="ac" href="#">Learn More</a>
+                </div>
+                <div class="col-sm-2 cll bgc1">
+                    <img class="mt-4"  src="paytm-imgages/flat.png"width="55%" >
+                    <p class="mt"><span style="font-size:20px;font-weight: 700;">Flat 14%<br>Cashback</span><br> With Code<br> WELCOMEFLIGHT</p>
+                </div>
+                <div class="col-sm-2 cll bgc1 ms-4">
+                    <img class="mt-4"  src="paytm-imgages/cashback.png"width="55%" >
+                    <p class="mt"><span style="font-size:20px;font-weight: 700;">100% Refund</span><br>With Paytm's<br> Cancellation Protect</p>
+                </div>
+                <div class="col-sm-2 cll bgc1 ms-4">
+                    <img class="mt-4"  src="paytm-imgages/travels.png"width="55%" >
+                    <p class="mt"><span style="font-size:20px;font-weight: 700;">Flat 10%<br> Cashback</span><br>With Code HAPPYBUS</p>
+                </div>
+                <div class="col-sm-2 cll bgc1 ms-4 clb">
+                    <img class="mt-4"  src="paytm-imgages/trainteket.png"width="55%" >
+                    <p class="mt"><span style="font-size:20px;font-weight: 700;">Sanitised Bus<br> Options With<br> TravelSafe+</p>
+                </div>
+                <div class="col-sm-2 cll bgc1 ms-4 clb">
+                    <img class="mt-4"  src="paytm-imgages/pnr.png"width="55%" >
+                    <p class="mt"><span style="font-size:20px;font-weight: 700;">PNR Status<br> Check In Few<br> Simple Clicks</p>
+                </div>    
+                
+            </div>
+           
+            <!-----------footer---------->
+            <div class="fot">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h4 style="padding-top:90px; padding-left: 65px; color: #000000; font-weight: 500; font-size: 21px;">Download Paytm App<br> to Pay from anywhere</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="paytm-imgages/downloadApple.svg"width="80%" style="margin-left: -90px; padding-top: 80px;">
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="paytm-imgages/downloadGoogle.svg"width="90%" style="margin-left: -145px; padding-top: 80px;">
+                    </div>
+                    <div class="col-sm-5" style="padding-top: 90px; padding-left: 350px;">
+                        <img  src="paytm-imgages/twitter.svg"width="10%">
+                        <img class="ms-4" src="paytm-imgages/instagram.svg"width="11%">
+                        <img class="ms-4" src="paytm-imgages/facebook.svg"width="5%">
+                    </div>
+                </div><br><br>
+                <hr style="margin-left: 60px; margin-right: 60px;">
+                <div class="form" style="margin-left: 30px; margin-top: 60px;">
+                    <div id="accordion"class="accordion" style="border: none;">
+                        <div>
+                            <div class="card-header">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4" style="opacity: 0.8;">investor Relations plus</b>
+                                </a><hr style="margin-left: 17%; margin-top: -16px; width: 79%; display: block;">
+                            </div>
+                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body card1" style="background-color: #f5f7fa ;">
+                                    <a href="#">Home</a>
+                                    <a href="#">Financials</a>
+                                    <a href="#">Filings & Press Releases</a>
+                                    <a href="#">News & Events</a>
+                                    <a href="#">Corporate Governance</a>
+                                    <a href="#">News & Events</a>
+                                </div>
+                            </div>
+                        </div><br>
+
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseTWO">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">More about Paytm</b>
+                                </a><hr style="margin-left: 17%; margin-top: -16px; width: 79%; display: block;">
+                            </div>
+                            <div id="collapseTWO" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa; margin-left:  70px;">
+                                    <b>Paytm - India's Most Popular Platform for Money Transfer, BHIM UPI Payments, Recharges and other online payments</b><br>
+                                    <p style="font-size: 14px; color: #707070;"> Paytm - India’s largest mobile e-commerce website is an ultimate destination for prompt Online<br> Recharge, DTH, Data Card & Metro Card Recharge and Mobile Bill Payment for Airtel, Aircel, BSNL, Idea, MTNL, Vodafone & other operators for all the circles across India. Enjoy our online recharge and bill payment service along with best bonus packs of internet & roaming within a jiffy.
+                                        Now you don’t have to look at various websites to find the best entertainment option in your city. You can book movie tickets, event tickets and travel tickets within minutes on Paytm.com. Paytm login is very easy on the Paytm app and Paytm website. Just enter your number and Password/OTP to login and process all the transactions instantly on Paytm.</p>
+                                </div>
+                            </div>
+                        </div><br>
+
+
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseThree">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Company</b>
+                                </a><hr style="margin-left: 11%; margin-top: -16px; width: 85%; display: block;">
+                            </div>
+                            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">About Us</a>
+                                    <a href="#">CSR</a>
+                                    <a href="#">Blog</a>
+                                    <a href="#">Contact Us</a>
+                                    <a href="#">Terms & Conditions</a>
+                                    <a href="#">Sustainability</a>
+                                </div>
+                            </div>
+                        </div><br>
+
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseFour"><b class="ms-4"style="opacity: 0.8;">Career</b>
+                                </a><hr style="margin-left: 7%; margin-top: -16px; width: 89%; display: block;">
+                            </div>
+                            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Mobile Recharge</a>
+                                    <a href="#">Mobile Bill Payment</a>
+                                    <a href="#">Datacard Recharge</a>
+                                    <a href="#">Datacard Bill Payment</a>
+                                    <a href="#"> Dth Recharge</a>
+                                    <a href="#">Electricity Bill Payment</a><br><br>
+                                    <a href="#">Mobile Recharge</a>
+                                    <a href="#">Mobile Bill Payment</a>
+                                    <a href="#">Datacard Recharge</a>
+                                    <a href="#">Datacard Bill Payment</a>
+                                    <a href="#"> Dth Recharge</a>
+                                    <a href="#">Electricity Bill Payment</a><br><br>
+                                    <a href="#">Mobile Recharge</a>
+                                    <a href="#">Mobile Bill Payment</a>
+                                    <a href="#">Datacard Recharge</a>
+                                    <a href="#">Datacard Bill Payment</a>
+                                    <a href="#"> Dth Recharge</a>
+                                    <a href="#">Electricity Bill Payment</a>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseFive">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Recharge & pay bills</b>
+                                </a><hr style="margin-left: 17%; margin-top: -16px; width: 79%; display: block;">
+                            </div>
+                            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Pay Loan EMI</a>
+                                    <a href="#">Pay Insurance Premium</a>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseOneSix">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Pay Loan EMI, Insurance Premiums & Education Fee</b>
+                                </a><hr style="margin-left: 32%; margin-top: -16px; width: 64%; display: block;">
+                            </div>
+                            <div id="collapseOneSix" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Movie Ticket Booking</a>
+                                    <a href="#"> Bus Ticket Booking</a>
+                                    <a href="#">Flight Tickets Booking</a>
+                                    <a href="#">Train Ticket Booking</a>
+                                    <a href="#">Events Booking</a>
+                                    <a href="#">Upcoming Movies</a><br><br>
+                                    <a href="#">Trains Sitemap movie</a>
+                                    <a href="#">Bus Sitemap</a>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseSeven">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Book Travel & Entertainment</b>
+                                </a><hr style="margin-left: 20%; margin-top: -16px; width: 76%; display: block;">
+                            </div>
+                            <div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Home</a>
+                                    <a href="#">Financials</a>
+                                    <a href="#">Filings & Press Releases</a>
+                                    <a href="#">News & Events</a>
+                                    <a href="#">Corporate Governance</a>
+                                    <a href="#">News & Events</a>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseAight">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Investments & Miscellaneous
+                                        plus</b>
+                                </a><hr style="margin-left:23%; margin-top: -16px; width: 73%; display: block;">
+                            </div>
+                            <div id="collapseAight" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Home</a>
+                                    <a href="#">Financials</a>
+                                    <a href="#">Filings & Press Releases</a>
+                                    <a href="#">News & Events</a>
+                                    <a href="#">Corporate Governance</a>
+                                    <a href="#">News & Events</a>
+                                </div>
+                            </div>
+                        </div><br>
+
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseNine">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Loans and Credit Cards</b>
+                                </a><hr style="margin-left: 17%; margin-top: -16px; width: 79%; display: block;">
+                            </div>
+                            <div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Home</a>
+                                    <a href="#">Financials</a>
+                                    <a href="#">Filings & Press Releases</a>
+                                    <a href="#">News & Events</a>
+                                    <a href="#">Corporate Governance</a>
+                                    <a href="#">News & Events</a>
+                                </div>
+                            </div>
+                        </div><br>
+
+                        <div>
+                            <div class="card-header" style="margin-top: -20px;">
+                                <a class="btn" data-bs-toggle="collapse" href="#collapseTen">
+                                    <span class="material-symbols-outlined" style="position: relative; top: 5px; left: 13px;" >add</span><b class="ms-4"style="opacity: 0.8;">Financial Tools & Calculators</b>
+                                </a><hr style="margin-left: 17%; margin-top: -16px; width: 79%; display: block;">
+                            </div>
+                            <div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+                                <div class="card-body" style="background-color: #f5f7fa ;">
+                                    <a href="#">Home</a>
+                                    <a href="#">Financials</a>
+                                    <a href="#">Filings & Press Releases</a>
+                                    <a href="#">News & Events</a>
+                                    <a href="#">Corporate Governance</a>
+                                    <a href="#">News & Events</a>
+                                </div>
+                            </div>
+                        </div><br>   
+                    </div>
+                </div>
+            </div>
+
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
